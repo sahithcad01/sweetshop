@@ -1,0 +1,12 @@
+target file location--> 
+
+>git config --global user.name "username" (Enter)(//github user name)
+>git config --global user.email "xyz@gmail.com" (Enter)
+>git clone copylink  (Enter)
+>git add file name with extention (Enter)
+>git status (Enter) (//Optional)
+>git commit -m "Your Message" (Enter)
+>git push (Enter)
+//(100% success comment)
+
+
