@@ -4,6 +4,7 @@ target file location-->
 >git config --global user.email "xyz@gmail.com" (Enter)
 >git clone copylink  (Enter)
 
+-->After cloning....
 --> go to the Repository cloned folder then do below..!
 
 >git add file name with extention (Enter)
