@@ -13,4 +13,33 @@ target file location-->
 >git push (Enter)
 //(100% success comment)
 
+Method 1:
+>git add filename with extention (Enter)
+>git commit -m "Your Message" (Enter)
+Method 2:
+>git commit filename.ex (index.html) -m "message"
+
+see branch:
+>git branch
+
+change git branch:
+>git branch -m anotherbranchname
+
+move one branch to another br:
+>git checkout (br name)
+
+which br to upload file:
+>git push origin (Br name)
+
+online rep. to local download:
+>git pull
+
+merge sub branch into another/main br:
+>git merge brname(Ex:main)
+>git push
+
+adding all folders & files:
+>git add .
+
+
 
