@@ -19,6 +19,9 @@ Method 1:
 Method 2:
 >git commit filename.ex (index.html) -m "message"
 
+add & commint single linecode:
+>git commit -am "message"
+
 see branch:
 >git branch
 
@@ -40,6 +43,13 @@ merge sub branch into another/main br:
 
 adding all folders & files:
 >git add .
+
+branch comparison/check br files:
+>git diff (br name)
+
+*Press q key in keyboard if code stuck
+
+
 
 
 
