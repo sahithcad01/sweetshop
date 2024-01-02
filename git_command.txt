@@ -25,7 +25,7 @@ add & commint single linecode:
 see branch:
 >git branch
 
-change git branch:
+change git 1 to branch name:
 >git branch -m anotherbranchname
 
 move one branch to another br:
