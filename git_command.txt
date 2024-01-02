@@ -47,6 +47,11 @@ adding all folders & files:
 branch comparison/check br files:
 >git diff (br name)
 
+file remove from one branch:
+>git rm filename.ex
+>git commit -m "Message"
+>git push
+
 *Press q key in keyboard if code stuck
 
 
