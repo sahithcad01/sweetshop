@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,20 +14,20 @@
 
 	<div class="Homeheading">
 		<img src="images/ssslogo.png">
-		<h1>Sha Sweets & snacks</h1>
+		<h1>Sha Sweets & Snacks</h1>
 	</div>
 
 	<ul>
-		<li><a href="home.html">HOME</a></li>
-		<li><a href="#">ABOUT US</a></li>
-		<li><a href="#">SWEETS</a></li>
-		<li><a href="#">SNACKS</a></li>
-		<li><a href="#">ALL PRODUCTS</a></li>
-		<li><a href="#">BUY SWEETS & SNACKS</a></li>
-		<li><a href="#">CONTACT US</a></li>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="aboutus.html">ABOUT US</a></li>
+		<li><a href="sweets.html">SWEETS</a></li>
+		<li><a href="snacks.html">SNACKS</a></li>
+		<li><a href="allproducts.html">ALL PRODUCTS</a></li>
+		<li><a href="buy.html">BUY SWEETS & SNACKS</a></li>
+		<li><a href="contactus.html">CONTACT US</a></li>
 
 		<li class="lastmenuchild"><a href="Registrationform.html" target="blank" >Register</a></li>
-		<li class="login"><a href="#">Login</a></li>
+		<li class="login"><a href="login.html">Login</a></li>
 	</ul>
 
 	<div class="Homedescrp">
@@ -42,8 +43,8 @@
 	<!-- Additional required wrapper -->
 	<div class="swiper-wrapper">
 	  <!-- Slides -->
-	  <div class="swiper-slide"><img src="https://picsum.photos/id/42/800/300"></div>
 	  <div class="swiper-slide"><img src="https://picsum.photos/id/42/1349/300"></div>
+	  <div class="swiper-slide"><img src="https://picsum.photos/id/68/1349/300"></div>
 	  <div class="swiper-slide"><img src="https://picsum.photos/id/63/1349/300"></div>
 	  <div class="swiper-slide"><img src="https://picsum.photos/id/113/1349/300"></div>
 	  <div class="swiper-slide"><img src="https://picsum.photos/id/163/1349/300"></div>
@@ -99,8 +100,7 @@
     </div>
     </div>
 
-	<!-- <script src="JS/script.js">
-	</script> -->
+	
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script>
 		const swiper = new Swiper('.swiper', {
@@ -108,11 +108,10 @@
 		direction: 'horizontal',
 		loop: true,
 		autoplay: {delay: 1000,},
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 10,
-		disableOnInteraction: false,
-		pauseOnMouseEnter: true,
-		
+		disableOnInteraction: true,
+        pauseOnMouseEnter: true,
 
 		// If we need pagination
 		pagination: {
@@ -131,6 +130,11 @@
 			el: '.swiper-scrollbar',
 		},
 		});
+
+		//stop/start slideshow with mouse:
+		 
 		</script>
+		<!-- <script src="JS/script.js">
+	    </script> -->
 </body>
 </html>
