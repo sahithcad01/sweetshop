@@ -4,8 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sha Sweets & Snacks</title>
 
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="icon" type="image/x-icon" href="images/ssslogo.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -34,6 +35,34 @@
 	
 	<img src="https://i.postimg.cc/hPCpYZcy/pongalsale.png" width="883px" height="278px" align="left">
 	<img src="https://i.postimg.cc/xThyS5Rf/sweetgirl.jpg" width="450px" height="278px" align="right">
+
+	<!------------------------------------------swipejs web-------------------------------->
+	<!-- Slider main container -->
+    <div class="swiper">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+	  <!-- Slides -->
+	  <div class="swiper-slide"><img src="https://picsum.photos/id/42/800/300"></div>
+	  <div class="swiper-slide"><img src="https://picsum.photos/id/42/1349/300"></div>
+	  <div class="swiper-slide"><img src="https://picsum.photos/id/63/1349/300"></div>
+	  <div class="swiper-slide"><img src="https://picsum.photos/id/113/1349/300"></div>
+	  <div class="swiper-slide"><img src="https://picsum.photos/id/163/1349/300"></div>
+	  <div class="swiper-slide"><img src="https://picsum.photos/id/225/1349/300"></div>
+	  ...
+	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
+  
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+  
+	<!-- If we need scrollbar -->
+	<div class="swiper-scrollbar"></div>
+    </div>
+	<!--------------------------------------------------------------------------------------->
+
+
 	&emsp;
 	<h3> SWEETS CATEGORY :</h3>
 	<div class="sweets">
@@ -60,17 +89,48 @@
 		    </div>
 		</figure>
 
-		<figure>
+		<!-- <figure>
 			<div id="item-5">
 	        <img src="https://i.postimg.cc/fLC7mKZd/kajukattly.jpg" width="250px" height="200px">
 			<div id="item-7">kajukattly price Rs.99/1kg</div>
 		    </div>
-		</figure>
+		</figure> -->
 
     </div>
     </div>
 
 	<!-- <script src="JS/script.js">
 	</script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+		const swiper = new Swiper('.swiper', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+		autoplay: {delay: 1000,},
+		slidesPerView: 2,
+		spaceBetween: 10,
+		disableOnInteraction: false,
+		pauseOnMouseEnter: true,
+		
+
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			clickable:true,
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		// And if we need scrollbar
+		scrollbar: {
+			el: '.swiper-scrollbar',
+		},
+		});
+		</script>
 </body>
 </html>

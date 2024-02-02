@@ -22,6 +22,9 @@ Method 2:
 add & commint single linecode:
 >git commit -am "message"
 
+restore add staging:
+>git restore --staged filename (use after git add cmd)
+
 see branch:
 >git branch
 
