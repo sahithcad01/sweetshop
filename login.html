@@ -1,27 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sha Sweets & Snacks * Login</title>
+
+	<link rel="icon" type="image/x-icon" href="images/ssslogo.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
+	<div class="Homeheading">
+		<img src="images/ssslogo.png">
+		<h1>Sha Sweets & Snacks</h1>
+	</div>
+
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="aboutus.html">ABOUT US</a></li>
+		<li><a href="sweets.html">SWEETS</a></li>
+		<li><a href="snacks.html">SNACKS</a></li>
+		<li><a href="allproducts.html">ALL PRODUCTS</a></li>
+		<li><a href="buy.html">BUY SWEETS & SNACKS</a></li>
+		<li><a href="contactus.html">CONTACT US</a></li>
+
+		<li class="lastmenuchild"><a href="Registrationform.html" target="blank" >Register</a></li>
+		<li class="login"><a href="login.html">Login</a></li>
+	</ul>
+
+	<div class="Homedescrp">
+		<p><marquee><img src="https://i.postimg.cc/zf6Vy2yv/tamil-text-marquee.png" width="750px" height="50px"></marquee></p>
+	</div>
 
     <form action="">
+        <h2>User Login</h2>
         <p>
-            <label for="fname">First Name: </label>
-            <input type="text" id="fname" name="fname" value="Sahith">
+            <label for="uname">User Name: </label>
+            <input type="text" id="uname" name="uname" value="">
         </p>
       
         <p>
-            <label for="lname">Last Name: </label>
-            <input type="text"  id="lname" name="lname" value="Afridi">
-    
+            <label for="phone">Phone Number: </label>
+            <input type="tel"  id="phone" name="phone" value="">
         </p>
 
         <p>
-            <label for="phone">Phone Number: </label>
-            <input type="tel"  id="phone" name="phone" value="2656465115144">
+            <label for="email">E-mail: </label>
+            <input type="email"  id="email" name="email" value="">
         </p>
 
         <button type="submit" value="submit">
@@ -29,7 +55,7 @@
         </button>
     </form>
 
-    <table border="3px solid red">
+    <!-- <table border="3px solid red">
         <tr>
             <td id="fnamedisp"></td>
         </tr>
@@ -49,7 +75,7 @@
          document.getElementById("lnamedisp").innerHTML=document.getElementById("lname").value;
 
          document.getElementById("phnodisp").innerHTML=document.getElementById("phone").value;
-    </script>
+    </script> -->
 
 </body>
 </html>

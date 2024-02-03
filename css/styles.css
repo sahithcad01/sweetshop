@@ -114,16 +114,14 @@ h3{
 
 .angry-grid {
 	display: grid; 
- 
-	grid-template-rows: 120px 70px;
+	/* grid-template-rows: 120px 70px; */
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	
 	gap: 0px;
 	margin: 10px auto;
-	width: 80%;
- grid-column-gap: 10px;
- 
- 
+	width: 100%;
+    grid-column-gap: 15px;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
  }
    
  #item-0 {
@@ -149,7 +147,7 @@ h3{
  #item-2 {
 	text-align: center;
 	font-weight: bold;
-	background-color: #5155d3; 
+	background-color: #09e8f8; 
 	grid-row-start: 2;
 	grid-column-start: 1;
  
@@ -159,7 +157,8 @@ h3{
  }
  #item-3 {
 	text-align: center;
-	background-color: #5155d3; 
+	font-weight: bold;
+	background-color: #09e8f8; 
 	grid-row-start: 2;
 	grid-column-start: 2;
  
@@ -188,8 +187,9 @@ h3{
 	
  }
  #item-6 {
- 
-	background-color: #5155d3; 
+	text-align: center;
+	background-color: #09e8f8;
+	font-weight: bold; 
 	grid-row-start: 2;
 	grid-column-start: 3;
  
@@ -199,8 +199,8 @@ h3{
  }
  #item-7 {
 	text-align: center;
- 
-	background-color: #5155d3; 
+	font-weight: bold;
+	background-color: #09e8f8; 
 	grid-row-start: 2;
 	grid-column-start: 4;
  
@@ -208,3 +208,88 @@ h3{
 	grid-column-end: 5;
 	
  }
+
+ #item-8 {
+	background-color: #a50303; 
+	grid-row-start: 1;
+	grid-column-start: 1;
+ 
+	grid-row-end: 2;
+	grid-column-end: 2;
+	
+ }
+
+ #item-9 {
+	text-align: center;
+	font-weight: bold;
+	background-color: #09e8f8; 
+	grid-row-start: 2;
+	grid-column-start: 1;
+ 
+	grid-row-end: 3;
+	grid-column-end: 2;
+ }
+
+ #item-10 {
+	background-color: #a50303; 
+	grid-row-start: 1;
+	grid-column-start: 1;
+
+	grid-row-end: 2;
+	grid-column-end: 2;
+	
+ }
+
+ #item-11 {
+	text-align: center;
+	font-weight: bold;
+	background-color: #09e8f8; 
+	grid-row-start: 2;
+	grid-column-start: 1;
+ 
+	grid-row-end: 3;
+	grid-column-end: 2;
+ }
+
+ #item-12 {
+	background-color: #a50303; 
+	grid-row-start: 1;
+	grid-column-start: 1;
+
+	grid-row-end: 2;
+	grid-column-end: 2;
+	
+ }
+
+ #item-13 {
+	text-align: center;
+	font-weight: bold;
+	background-color: #09e8f8; 
+	grid-row-start: 2;
+	grid-column-start: 1;
+ 
+	grid-row-end: 3;
+	grid-column-end: 2;
+ }
+
+ #item-14 {
+	background-color: #a50303; 
+	grid-row-start: 1;
+	grid-column-start: 1;
+
+	grid-row-end: 2;
+	grid-column-end: 2;
+	
+ }
+
+ #item-15 {
+	text-align: center;
+	font-weight: bold;
+	background-color: #09e8f8; 
+	grid-row-start: 2;
+	grid-column-start: 1;
+ 
+	grid-row-end: 3;
+	grid-column-end: 2;
+ }
+ 
