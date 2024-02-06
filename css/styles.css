@@ -1,10 +1,18 @@
-body{
+html, body{
+	max-width: 100%;
+	min-height: 100%;
 	background-color: antiquewhite;
-	width: 100%;
 }
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .Homeheading img{
 	width: 100px;
 	height: 100px;
+	
 }
 
 .Homeheading{
@@ -15,6 +23,13 @@ body{
 	place-items: center;
 	background-color: #960018;
 }
+.accounts img{
+	width: 50px;
+	height: 50px;
+	float: right;
+	place-items: right;
+}
+
 
 
 h1{
@@ -293,3 +308,9 @@ h3{
 	grid-column-end: 2;
  }
  
+ /* @media screen and(max-width: 300px){
+	li a{
+		font-size: 500px;
+	}
+}
+	 */

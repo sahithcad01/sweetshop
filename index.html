@@ -16,6 +16,10 @@
 		<img src="images/ssslogo.png">
 		<h1>Sha Sweets & Snacks</h1>
 	</div>
+	<div class="accounts">
+		<a href="#"><img src="https://i.postimg.cc/fTmvqbNq/accountimg.png" alt="account"></a>
+		<a href="#"><img src="https://i.postimg.cc/wv9y8vH6/callimg.png" alt="call"></a>
+	</div>
 
 	<ul>
 		<li><a href="index.html">HOME</a></li>
@@ -43,12 +47,11 @@
 	<!-- Additional required wrapper -->
 	<div class="swiper-wrapper">
 	  <!-- Slides -->
+	  <div class="swiper-slide"><img src="https://i.postimg.cc/JhBdNSdk/childeatsweet.jpg" width="600" height="300"><img src="https://i.postimg.cc/13FzL387/allsweets.jpg" width="749" height="300"></div>
+	  <div class="swiper-slide"><img src="https://i.postimg.cc/y6fyLs3S/strpimg.webp" width="1349" height="300"></div>
 	  <div class="swiper-slide"><img src="https://picsum.photos/id/42/1349/300"></div>
-	  <div class="swiper-slide"><img src="https://picsum.photos/id/68/1349/300"></div>
 	  <div class="swiper-slide"><img src="https://picsum.photos/id/63/1349/300"></div>
 	  <div class="swiper-slide"><img src="https://picsum.photos/id/113/1349/300"></div>
-	  <div class="swiper-slide"><img src="https://picsum.photos/id/163/1349/300"></div>
-	  <div class="swiper-slide"><img src="https://picsum.photos/id/225/1349/300"></div>
 	  ...
 	</div>
 	<!-- If we need pagination -->
@@ -62,7 +65,7 @@
 	<div class="swiper-scrollbar"></div>
     </div>
 	<!--------------------------------------------------------------------------------------->
-
+	<iframe width="800" height="315" src="https://youtube.com/embed/J_jou5itY8o?si=Pn86yN07wCdXiGwM?autoplay=1&mute=1" name="youtube embed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 	&emsp;
 	<h3> SWEETS CATEGORY :</h3>
@@ -103,15 +106,16 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script>
-		const swiper = new Swiper('.swiper', {
+		const swiper = new Swiper('.swiper',{
 		// Optional parameters
 		direction: 'horizontal',
 		loop: true,
 		autoplay: {delay: 1000,},
 		slidesPerView: 1,
 		spaceBetween: 10,
-		disableOnInteraction: true,
+		disableOnInteraction: false,
         pauseOnMouseEnter: true,
+		autoplayDisableOnInteraction:true,
 
 		// If we need pagination
 		pagination: {
@@ -129,10 +133,16 @@
 		scrollbar: {
 			el: '.swiper-scrollbar',
 		},
-		});
 
 		//stop/start slideshow with mouse:
-		 
+			
+		});
+		
+		// $(".swiper-container").hover(function() {
+		// 	(this).swiper.autoplay.start();
+		// }, function() {
+		// 	(this).swiper.autoplay.start();
+		// });
 		</script>
 		<!-- <script src="JS/script.js">
 	    </script> -->
