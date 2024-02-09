@@ -35,40 +35,62 @@
 	</div>
 
     <!-- //contact us -->
-    <h2>Contact Us</h2>
+    <center>
+    <div class="userlogin">
 
     <form action="">
+        <h2>Contact Us</h2><br>
         <p>
-            <label for="name">Name: </label>
+            <label for="name">Name: </label><br>
             <input type="text" id="name" name="name" value="">
         </p>
 
         <p>
-            <label for="email">E-mail: </label>
+            <label for="email">E-mail: </label><br>
             <input type="email"  id="email" name="email" value="">
         </p>
 
         <p>
-            <label for="phone">Phone Number: </label>
+            <label for="phone">Phone Number: </label><br>
             <input type="tel"  id="phone" name="phone" value="">
         </p>
 
         <p>
-            <label for="chat">Add chat : </label>
+            <label for="chat" >Add chat : </label><br>
             <textarea id="chat"></textarea>
         </p>
 
-        <button type="submit" value="submit">
-            Submit
-        </button>
+        <input type="submit" value="Submit" id="contactussubmit" name="contactussubmit">
+        </input>
 
-        <button type="cancel" value="cancel">
-            Cancel
-        </button>
+        <input type="submit" value="Cancel" id="contactuscancel" name="contactuscancel">
+        </input>
 
     </form>
+    </div>
+    </center>
+ 
+    <script>
+        //Event Listener:
+        //submit:
+		const cussubmit = "contactussubmit";
+		const clickbtns = document.querySelector(`#${cussubmit}`);
+		clickbtns.addEventListener('click', cussubmitfunc);
 
-    <script></script>
+		function cussubmitfunc(){
+			console.log("Submit is working under Listener");
+		}
+
+        //Cancel:
+        const cuscancel = "contactuscancel";
+		const clickbtnc = document.querySelector(`#${cuscancel}`);
+		clickbtnc.addEventListener('mouseover', cuscancelfunc);
+
+		function cuscancelfunc(){
+			console.log("Cancel is working under Listener");
+		}
+
+    </script>
 
 
 </body>

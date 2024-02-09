@@ -67,6 +67,11 @@
 	<!--------------------------------------------------------------------------------------->
 	<iframe width="800" height="315" src="https://youtube.com/embed/J_jou5itY8o?si=Pn86yN07wCdXiGwM?autoplay=1&mute=1" name="youtube embed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+	<!-- Event_Listener -->
+	<div class="bottomdesign">
+		<input type="submit" value="click Me" id="clickme" name="clickme">
+	</div>
+
 	&emsp;
 	<h3> SWEETS CATEGORY :</h3>
 	<div class="sweets">
@@ -102,6 +107,7 @@
 
     </div>
     </div>
+
 
 	
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -143,6 +149,17 @@
 		// }, function() {
 		// 	(this).swiper.autoplay.start();
 		// });
+
+		//Event Listener:
+		const clickid = "clickme";
+		const clickmebtn = document.querySelector(`#${clickid}`);
+		clickmebtn.addEventListener('click', clickfunc);
+		clickmebtn.addEventListener('mouseover', clickfunc);
+
+		function clickfunc(){
+			console.log("click is working under Listener");
+		}
+
 		</script>
 		<!-- <script src="JS/script.js">
 	    </script> -->
