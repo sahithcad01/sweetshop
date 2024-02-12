@@ -26,8 +26,8 @@ html, body{
 	background-color: #960018;
 }
 .accounts img{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	float: right;
 	place-items: right;
 }
@@ -134,7 +134,7 @@ h3{
 	/* grid-template-rows: 120px 70px; */
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	
-	gap: 0px;
+	gap: 10px;
 	margin: 10px auto;
 	width: 100%;
     grid-column-gap: 15px;
@@ -149,6 +149,7 @@ h3{
  
 	grid-row-end: 2;
 	grid-column-end: 2;
+	image-orientation: center;
 	
  }
  #item-1 {
@@ -321,27 +322,30 @@ h3{
 
 .userreg{
 	display: flex;
-	justify-content: center;
-	place-items: center;
-	width: 30%;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 0px;
-    grid-column-gap: 15px;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	width: 50%;
+	justify-content: space-around;
+	place-content: center;
 	background-color: #e05d73;
 	
+
+}
+
+.userreg label{
+	display: inline-block;
+    text-align: left;
+    width: 100px;
+	align-items: flex-end;
 }
 
 /*Userlogin*/
 .userlogin{
-	display: flex;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 0px;
-    grid-column-gap: 15px;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	justify-content: center;
-	place-items: center;
+	display: block;
 	width: 30%;
 	background-color: #e05d73;
 }
 
+.userlogin label{
+	display: inline-block;
+    text-align: left;
+    width: 50px;
+}
