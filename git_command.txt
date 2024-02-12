@@ -57,7 +57,9 @@ file remove from one branch:
 
 *Press q key in keyboard if code stuck
 
+#2 :TOKEN METHOD to access Git_Hub method:
 
+git command : git remote set-url origin https://token-link@github.com/sahithcad01/repit*name
 
 
 
