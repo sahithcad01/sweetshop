@@ -323,21 +323,22 @@ h3{
 
 
 .userreg{
-	display: flex;
-	width: 50%;
-	justify-content: space-around;
-	place-content: center;
+	display: grid;
+	width: 49%;
+	justify-content: space-evenly;
+	place-content: right;
 	background-color: #e05d73;
-	
-
 }
 
 .userreg label{
-	display: inline-block;
+	display: grid;
     text-align: left;
-    width: 100px;
-	align-items: flex-end;
+    width: 49%;
+	align-items: left;
+	justify-content: left;
+	
 }
+
 
 /*Userlogin*/
 .userlogin{
